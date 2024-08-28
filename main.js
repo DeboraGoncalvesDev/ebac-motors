@@ -40,9 +40,9 @@ $(document).ready(function(){
             nome:'Por favor, insira o seu nome'
         },
         submitHandler: function(form){
-            console.log(form)
+            alert(`formulario enviado`)
         },
-        invalidHandler: function(evento, validador){
+        invalidHandler: function(form, validador){
             let camposIncorretos = validador.numberOfInvalids();
             if(camposIncorretos){
                 alert(`Existem ${camposIncorretos} campos incorretos`)
